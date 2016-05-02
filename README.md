@@ -1,4 +1,5 @@
 # CLInfo
+[![Build Status](https://travis-ci.org/Miskerest/CLInfo.svg?branch=master)](https://travis-ci.org/Miskerest/CLInfo)
 
 This is a simple Pyton/Bash script that grabs various information such as weather, system info, and the current time, outputs it in a cycle through stdout.
 
