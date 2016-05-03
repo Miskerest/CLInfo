@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 
 import os,sys,time,asciitime,re,curses,signal
-from time import gmtime, strftime
+from time import strftime, localtime
 
 def printtime():
-    print(strftime("%a, %d %b %Y %H:%M:%S", gmtime()))
+    print(strftime("%a, %d %b %Y %H:%M:%S", localtime()))
 
 def cls():
     os.system('clear')
@@ -17,7 +17,7 @@ def printweather():
     time.sleep(5)
 
 def printsysinfo():
-    print(strftime("%a, %d %b %Y %H:%M:%S", gmtime()))
+    print(strftime("%a, %d %b %Y %H:%M:%S", localtime()))
     print("\t\t\t  ===============\n\t\t\t    System Info\n\t\t\t  ===============")
     print("Logged in as: ")
     os.system('whoami')
